@@ -3,4 +3,4 @@ $host = '';
 $db   = '';
 $user = '';
 $pass = '';
-$charset = '';
+$charset = 'utf8mb4';
