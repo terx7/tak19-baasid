@@ -47,6 +47,6 @@ echo $price ."€";
 
 </table>
 <a href="changeForm.php">Muuda</a>
-<a href="deleteForm.php">Kustuda</a>
+<?php echo "<a href='deleteForm.php?id=$book[id]'>Kustuda</a>"; ?>
 </body>
 </html>
