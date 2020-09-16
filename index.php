@@ -14,18 +14,21 @@ $aBooks = $stmt->fetchAll();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <ul>
-    <?php
-    foreach ($aBooks as $book) {
-        echo"<li>" ."<a href= 'book.php?id=$book[id]'>" .$book[title] ."</a>" ."</li>";
-    }
-    ?>
+        <?php
+        foreach ($aBooks as $book) {
+            echo "<li>" . "<a href= 'book.php?id=$book[id]'>" . $book['title'] . "</a>" . "</li>";
+        }
+        ?>
     </ul>
 </body>
+
 </html>
